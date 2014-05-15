@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package money12;
 
 /**
@@ -9,44 +5,43 @@ package money12;
  * @author Andrew
  */
 class Money implements Expression {
-    
-protected int amount;
-protected String currency;
 
-Money(int amount, String currency) {
-    this.amount = amount;
-    this.currency = currency;
-}
+    protected int amount;
+    protected String currency;
 
-String currency() {
-    return currency;
-}
+    Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
+    }
 
-Money times (int multiplier){
-    return new Money(amount * multiplier, currency);
-}
+    String currency() {
+        return currency;
+    }
 
-Expression plus (Money addend) {
-    return new Money(amount + addend.amount, currency);
-}
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
+    }
 
-@Override
-public String toString() {
-    return amount + " " + currency;
-}
+    Expression plus(Money addend) {
+        return new Money(amount + addend.amount, currency);
+    }
 
-static Money dollar(int amount){
-    return new Money(amount, "USD");
-}
+    @Override
+    public String toString() {
+        return amount + " " + currency;
+    }
 
-static Money franc(int amount){
-    return new Money(amount, "CHF");
-}
+    static Money dollar(int amount) {
+        return new Money(amount, "USD");
+    }
 
-@Override
-public boolean equals(Object object) {
-    Money money = (Money)object;
-    return amount == money.amount && currency().equals(money.currency());
-}
+    static Money franc(int amount) {
+        return new Money(amount, "CHF");
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        Money money = (Money) object;
+        return amount == money.amount && currency().equals(money.currency());
+    }
 }

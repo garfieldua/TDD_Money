@@ -13,8 +13,6 @@ package money13;
  * DONE:
  * Bank.reduce(Money)
  */
-
-
 public class Money13 {
 
     public static void main(String[] args) {

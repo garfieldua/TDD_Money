@@ -23,7 +23,6 @@ package money09;
  * Compare Franc with Dollar
  * +Currency?
  */
-
 public class Money09 {
 
     public static void main(String[] args) {

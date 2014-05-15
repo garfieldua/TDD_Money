@@ -23,7 +23,6 @@ package money10;
  * Currency?
  * +Common times operation
  */
-
 public class Money10 {
 
     public static void main(String[] args) {

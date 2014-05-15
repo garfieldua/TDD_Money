@@ -15,8 +15,6 @@ package money16;
  * Sum.plus
  * Expression.times
  */
-
-
 public class Money16 {
 
     public static void main(String[] args) {

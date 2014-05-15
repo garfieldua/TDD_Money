@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package money08;
 
 /**
@@ -9,23 +5,22 @@ package money08;
  * @author Andrew
  */
 abstract class Money {
-    
-protected int amount;
 
-abstract Money times(int multiplier);
+    protected int amount;
 
-static Money dollar(int amount){
-    return new Dollar(amount);
-}
+    abstract Money times(int multiplier);
 
-static Money franc(int amount){
-    return new Franc(amount);
-}
+    static Money dollar(int amount) {
+        return new Dollar(amount);
+    }
 
-@Override
-public boolean equals(Object object) {
-    Money money = (Money)object;
-    return amount == money.amount && getClass().equals(money.getClass());
-}
+    static Money franc(int amount) {
+        return new Franc(amount);
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        Money money = (Money) object;
+        return amount == money.amount && getClass().equals(money.getClass());
+    }
 }

@@ -13,8 +13,6 @@ package money14;
  * Reduce Money with conversion
  * Reduce(Bank,String)
  */
-
-
 public class Money14 {
 
     public static void main(String[] args) {

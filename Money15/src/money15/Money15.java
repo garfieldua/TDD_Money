@@ -15,8 +15,6 @@ package money15;
  * Reduce(Bank,String)
  * $5 + 10 CHF = $10 if CHF:USD is 2:1
  */
-
-
 public class Money15 {
 
     public static void main(String[] args) {

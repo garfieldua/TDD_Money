@@ -23,7 +23,6 @@ package money11;
  * +Dollar/Franc code duplication
  * +Do we really need to test Multiplication for Franc?
  */
-
 public class Money11 {
 
     public static void main(String[] args) {

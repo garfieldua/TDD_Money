@@ -23,7 +23,6 @@ package money08;
  * Common equal operation
  * Compare Franc with Dollar
  */
-
 public class Money08 {
 
     public static void main(String[] args) {

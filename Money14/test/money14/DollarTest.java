@@ -1,17 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package money14;
 
-import money14.Sum;
-import money14.Expression;
-import money14.Bank;
-import money14.Money;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,42 +8,23 @@ import static org.junit.Assert.*;
  * @author Andrew
  */
 public class DollarTest {
-    
+
     public DollarTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
-    /**
-     * Test of times method, of class Dollar.
-     */
     @Test
     public void testMultiplication() {
         Money five = Money.dollar(5);
         assertEquals(Money.dollar(10), five.times(2));
         assertEquals(Money.dollar(15), five.times(3));
     }
-    
+
     @Test
     public void testEquality() {
         assertTrue(Money.dollar(5).equals(Money.dollar(5)));
         assertFalse(Money.dollar(5).equals(Money.dollar(6)));
     }
-    
+
     @Test
     public void testSimpleAddition() {
         Money five = Money.dollar(5);
@@ -64,24 +33,24 @@ public class DollarTest {
         Money reduced = bank.reduce(sum, "USD");
         assertEquals(Money.dollar(10), reduced);
     }
-    
+
     @Test
     public void testPlusReturnsSum() {
         Money five = Money.dollar(5);
         Expression result = five.plus(five);
-        Sum sum = (Sum)result;
+        Sum sum = (Sum) result;
         assertEquals(five, sum.augend);
         assertEquals(five, sum.addend);
     }
-    
+
     @Test
     public void testReduceSum() {
-        Expression sum = new Sum(Money.dollar(3),Money.dollar(4));
+        Expression sum = new Sum(Money.dollar(3), Money.dollar(4));
         Bank bank = new Bank();
-        Money result= bank.reduce(sum, "USD");
-        assertEquals(Money.dollar(7),result);
+        Money result = bank.reduce(sum, "USD");
+        assertEquals(Money.dollar(7), result);
     }
-    
+
     @Test
     public void testReduceMoney() {
         Bank bank = new Bank();

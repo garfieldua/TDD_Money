@@ -12,9 +12,6 @@ public class DollarTest {
     public DollarTest() {
     }
 
-    /**
-     * Test of times method, of class Dollar.
-     */
     @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
