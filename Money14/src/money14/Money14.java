@@ -9,9 +9,9 @@ package money14;
  * 
  * DONE:
  * Bank.reduce(Money)
- * $5 + $5 = $10
- * Reduce Money with conversion
- * Reduce(Bank,String)
+ * +$5 + $5 = $10
+ * +Reduce Money with conversion
+ * +Reduce(Bank,String)
  */
 public class Money14 {
 

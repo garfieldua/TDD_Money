@@ -10,7 +10,7 @@ package money02;
  * 
  * DONE:
  * $5 * 2 = $10
- * Dollar side-effects?
+ * +Dollar side-effects?
  */
 public class Money02 {
 

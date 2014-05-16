@@ -10,7 +10,7 @@ package money07;
  * Equal null
  * Equal object
  * Dollar/Franc code duplication
- * Common times operation
+ * Common times operations
  * +Currency?
  * 
  * DONE:
@@ -19,7 +19,7 @@ package money07;
  * equals()
  * Make 'amount' private
  * 5 CHF * 2 = 10 CHF
- * Common equal operation
+ * Common equals operations
  * +Compare Franc with Dollar
  */
 public class Money07 {

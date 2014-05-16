@@ -8,13 +8,13 @@ package money03;
  * Make 'amount' private
  * Money rounding?
  * hashCode()
- * Equal null
- * Equal object
+ * +Equal null
+ * +Equal object
  * 
  * DONE:
  * $5 * 2 = $10
  * Dollar side-effects?
- * equals()
+ * +equals()
  */
 public class Money03 {
 

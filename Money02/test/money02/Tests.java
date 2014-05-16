@@ -7,9 +7,9 @@ import static org.junit.Assert.*;
  *
  * @author Andrew
  */
-public class DollarTest {
+public class Tests {
 
-    public DollarTest() {
+    public Tests() {
     }
 
     @Test

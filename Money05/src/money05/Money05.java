@@ -9,16 +9,16 @@ package money05;
  * hashCode()
  * Equal null
  * Equal object
- * Dollar/Franc code duplication
- * Common equal operation
- * Common times operation
+ * +Dollar/Franc code duplication
+ * +Common equals operations
+ * +Common times operations
  * 
  * DONE:
  * $5 * 2 = $10
  * Dollar side-effects?
  * equals()
- * +Make 'amount' private
- * 5 CHF * 2 = 10 CHF
+ * Make 'amount' private
+ * +5 CHF * 2 = 10 CHF
  */
 public class Money05 {
 

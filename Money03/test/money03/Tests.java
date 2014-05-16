@@ -1,4 +1,4 @@
-package money05;
+package money03;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -7,16 +7,18 @@ import static org.junit.Assert.*;
  *
  * @author Andrew
  */
-public class DollarTest {
+public class Tests {
 
-    public DollarTest() {
+    public Tests() {
     }
 
     @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
-        assertEquals(new Dollar(10), five.times(2));
-        assertEquals(new Dollar(15), five.times(3));
+        Dollar product = five.times(2);
+        assertEquals(10, product.amount);
+        product = five.times(3);
+        assertEquals(15, product.amount);
     }
 
     @Test

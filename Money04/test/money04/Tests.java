@@ -1,4 +1,4 @@
-package money07;
+package money04;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -7,9 +7,9 @@ import static org.junit.Assert.*;
  *
  * @author Andrew
  */
-public class DollarTest {
+public class Tests {
 
-    public DollarTest() {
+    public Tests() {
     }
 
     @Test
